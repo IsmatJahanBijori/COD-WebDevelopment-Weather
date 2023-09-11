@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    overflow-x: hidden;
+    background-image: url('https://source.unsplash.com/1500x900/?landscape');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100%; */
+}
+
+/* .body-color {
+    background-color: #ccebff;
+    width: 100vw;
+    height: 100vh;
+    
+} */
+
+.header {
+    background-color: #4287f5;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 100px;
+
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+.hero {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+
+}
+
+.hero>* {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.hero-content {
+    padding: 30px;
+    background: #9f9f9f;
+    border-radius: 10px;
+
+}
+
+.search-container {
+    margin: 5px;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    margin-top: 50%;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: white;
+    cursor: pointer;
+
+}
+
+.search-container button:hover {
+    border: none;
+}
+
+.search-container input {
+    padding: 15px;
+    cursor: pointer;
+    /* border: none; */
+    border-radius: 5px white;
+}
+
+.card {
+    margin-top: 10px;
+}
+
+/* @media (max-width>1200px) {
+    body{
+        background-image: url('https://source.unsplash.com/1500x900/?landscape');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} */
