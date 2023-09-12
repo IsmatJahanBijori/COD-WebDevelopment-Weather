@@ -68,6 +68,13 @@ h1 {
 
 }
 
+#space{
+    margin: 0 5px;
+    /* color: black; */
+}
+.temp{
+    font-size: 40px;
+}
 
 .search-container button {
     padding: 6px 10px;
@@ -125,6 +132,7 @@ h1 {
     padding: 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    text-align: center;
 }
 
 .card-body {

@@ -17,10 +17,11 @@ fetch(url, options).then(res => res.json()).then(data => {
     wind_kph.innerHTML= data.current.wind_kph
     wind_mph.innerHTML= data.current.wind_mph
     humidity.innerHTML = data.current.humidity
+    cloud.innerHTML = data.current.cloud
+    text.innerHTML = data.current.condition.text
     // sunset.innerHTML= data.
     // min_temp.innerHTML= data.
-    // cloud.innerHTML= data. 
-    // feelslike_c.innerHTML= data.
+    feelslike_c.innerHTML= data.current.feelslike_c
     // sunrise.innerHTML= data.
     // sunset.innerHTML= data.
     // max_temp.innerHTML= data.
