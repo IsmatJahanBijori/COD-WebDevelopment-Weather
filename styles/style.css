@@ -7,7 +7,8 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     overflow-x: hidden;
-    background-image: url('https://source.unsplash.com/1500x900/?landscape');
+    background-image: url('https://source.unsplash.com/1500x3000/?landscape');
+    /* opacity: 0.5; */
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100%; */
@@ -21,8 +22,8 @@ body {
 } */
 
 .header {
-    background-color: #4287f5;
-    color: #fff;
+    background-color: #96c4ff;
+    color: black;
     text-align: center;
     padding: 20px;
     margin-bottom: 100px;
@@ -45,21 +46,28 @@ h1 {
 
 }
 
-.hero>* {
+/* .hero>* {
     grid-column-start: 1;
     grid-row-start: 1;
-}
+} */
 
 .hero-content {
     padding: 30px;
-    background: #9f9f9f;
+    background: #96c4ff;
     border-radius: 10px;
+    opacity: .9;
 
+}
+
+.hero-content img {
+    width: 600px;
 }
 
 .search-container {
     margin: 5px;
+
 }
+
 
 .search-container button {
     padding: 6px 10px;
@@ -79,18 +87,75 @@ h1 {
 .search-container input {
     padding: 15px;
     cursor: pointer;
-    /* border: none; */
-    border-radius: 5px white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
 }
 
 .card {
     margin-top: 10px;
+    margin-left: 10px;
+
 }
 
-/* @media (max-width>1200px) {
-    body{
-        background-image: url('https://source.unsplash.com/1500x900/?landscape');
-        background-repeat: no-repeat;
-        background-size: cover;
+.card p {
+    margin: 5px 0;
+}
+
+.card-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    grid-gap: 20px; 
+    max-width: 900px; 
+    margin: 40px auto; 
+}
+
+.card-design {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #96c4ff;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-content img {
+        width: 100%;
     }
-} */
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content img {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-content img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr; 
+      grid-gap: 10px;
+    }
+    .card-design{
+        width: 80%;
+        margin: auto;
+    }
+  }
