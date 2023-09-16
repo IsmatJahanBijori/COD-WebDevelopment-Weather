@@ -1,0 +1,1 @@
+### I have done my another task about weather forecast. I am using rapid api forecast api for getting live weather update. SOmeone can search by using city name and then he can get the weather update. It also gets the forecast info next three days.
