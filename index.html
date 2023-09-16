@@ -20,33 +20,30 @@
                 <div class="hero-content">
                     <img src="/images/undraw_weather_re_qsmd.svg" alt="">
                     <div class="search-container">
-                        <form>
-                            <input type="text" placeholder="Search.." >
-                            <span class="btn" id="submit">Search</span>
+                        <form role="search">
+                            <input type="text" placeholder="Search.." id="city" area-label="Search" >
+                            <button type="submit" class="btn" id="submit">Search</button>
                         </form>
                     </div>
-                    <!-- <span id=""></span> -->
                     <div class='card'>
-                        <!-- <img src="/images/undraw_weather_re_qsmd.svg" alt=""> -->
-                        <h1 class="">Weather in <span id="city"></span>, <span id="country"></span></h1>
+                        <h1 class="">Weather in <span id="cityName"></span></h1>
                         <p class="temp"><span id="temp_c"></span>°C <span id="space">|</span>Feels Like <span
                                 id="feelslike_c"></span></p>
                         <p class="">Humidity <span id="humidity"></span></p>
                         <p class="">Wind speed <span id="wind_kph"></span> km/h (<span id="wind_mph"></span> miles/h)
                         </p>
-                        <p class=""><span id="text"></span> <span id="cloud"></span></p>
+                        <p class=""><span id="text"></span> <span id="cloud"></span><img src="images/cloudy.png" alt="" id="weatherImage"></p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- todo -->
+
     <section class="card-div">
 
         <div class="card-design">
             <div class="card-header">Day 01</div>
             <div class="card-body">
-                <!-- Feels Like <span id="feelslike_c"></span> -->
                 <span id="date1"></span><br>
                 Sunrise <span id="sunrise1"></span><br>
                 Sunset <span id="sunset1"></span><br>
